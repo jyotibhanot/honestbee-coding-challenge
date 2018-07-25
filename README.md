@@ -1,5 +1,5 @@
 # honestbee-coding-challenge
-.
+```.
 ├── code1
 │   ├── Dockerfile
 │   ├── git-info.py
@@ -22,4 +22,4 @@
 └── README.md
 
 5 directories, 15 files
-
+```

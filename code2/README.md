@@ -9,3 +9,4 @@ To run with docker-compose
 ```
 docker-compose up -d
 ```
+NOTE: Do not enclose AWS Credentials in double quotes while filling up docker-compose.yml

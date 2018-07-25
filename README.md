@@ -1,5 +1,6 @@
 # honestbee-coding-challenge
 ```.
+
 ├── code1
 │   ├── Dockerfile
 │   ├── git-info.py
@@ -16,10 +17,17 @@
 │   │   └── nginx.conf
 │   ├── README.md
 │   └── ubuntu-base
-│       ├── Dockerfile
-│       ├── Dockerfile.BAK
-│       └── ubuntu-xenial-core-cloudimg-amd64-root.tar.gz
-└── README.md
+│       └── Dockerfile
+├── README.md
+└── terraform-s3
+    ├── main.tf
+    ├── provider-credentials.tfvars
+    ├── README.md
+    ├── s3bucket.tfplan
+    ├── terraform.tfstate
+    ├── terraform.tfstate.backup
+    └── variables.tf
 
-5 directories, 15 files
+6 directories, 20 files
+
 ```

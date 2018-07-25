@@ -12,10 +12,10 @@ services:
     container_name: honestbee_fluentd
     image: jyotibhanot30/ubuntu-fluentd:latest
     environment:
-      - AWS_KEY=<aws_access_key>
-      - AWS_SECRET=<aws_secret_key>
-      - S3_REGION=<region>
-      - S3_BUCKET=<bucket_name>
-      - S3_PATH=<path> #subdirectory
+      - AWS_KEY=<access_key> # Do not use double quotes
+      - AWS_SECRET=<secret_key> # Do not use double quotes
+      - S3_REGION=<region> # Do not use double quotes
+      - S3_BUCKET=<s3_bucket> # Do not use double quotes
+      - S3_PATH=<s3_folder> #subdirectory # Do not use double quotes
     volumes:
       - /var/log/nginx:/var/log/nginx #Mounting nginx log dir for fluentd

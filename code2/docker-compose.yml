@@ -1,0 +1,21 @@
+version: '2' #docker-compose version
+services:
+  nginx:
+    container_name: honestbee_nginx
+    image: jyotibhanot30/ubuntu-nginx:latest
+    volumes:
+      - /var/log/nginx:/var/log/nginx
+    ports:
+      - "80:80"
+  
+  fluentd:
+    container_name: honestbee_fluentd
+    image: jyotibhanot30/ubuntu-fluentd:latest
+    environment:
+      - AWS_KEY=<aws_access_key>
+      - AWS_SECRET=<aws_secret_key>
+      - S3_REGION=<region>
+      - S3_BUCKET=<bucket_name>
+      - S3_PATH=<path> #subdirectory
+    volumes:
+      - /var/log/nginx:/var/log/nginx #Mounting nginx log dir for fluentd
